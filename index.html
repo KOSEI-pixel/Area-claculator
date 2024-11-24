@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>area calculator</title>
+  </head>
+  <body>
+    <script>
+      var choice = prompt(
+        "welcome to area calculator\n pick a choice!. \n1. area of a rectangle \n2. area of a triange"
+      );
+
+      if (choice == "1") {
+        var l = prompt("enter the length of the rectangle");
+
+        var b = prompt("enter the breadth of the rectangle");
+
+        var result = Number(l) * Number(b);
+
+        alert("The area is" + result);
+      }
+
+      if (choice == "2") {
+        var h = prompt("enter the length of the Triangle");
+
+        var b = prompt("enter the breadth of the Triangle");
+
+        var result = (Number(h) * Number(b)) / 2;
+
+        alert("The area is" + result);
+      }
+    </script>
+  </body>
+</html>
